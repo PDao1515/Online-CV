@@ -1,0 +1,498 @@
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* #region banner */
+  #theimage {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    filter: brightness(50%);
+  }
+
+  #name {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* #endregion */
+
+  /* #region navigation */
+  .navbar {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0;
+    height: 60px;
+  }
+
+  .nav-item {
+    border-left: 1px solid #ddd;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .nav-item:hover {
+    background-color: #ddd;
+  }
+
+  .nav-center {
+    display: none;
+  }
+
+  /* #endregion */
+
+  /* #region information*/
+  #hiddeninfo {
+    display: none;
+  }
+
+  .information {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0;
+  }
+
+  #career {
+    flex: 50%;
+    background-color: #f5f5f5;
+    padding: 50px;
+  }
+
+  #info {
+    flex: 50%;
+    background-color: #f0f0f0;
+    padding: 50px;
+  }
+
+  .listinfo {
+    padding-bottom: 20px;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  .icons {
+    display: flex;
+  }
+
+  .content {
+    display: inline;
+    opacity: 0.7;
+  }
+  /* #endregion */
+
+  /* #region background */
+  .view-more-btn {
+    display: none;
+  }
+
+  .box:not(.expanded):hover .view-more-btn {
+    display: inline-block;
+    text-decoration: underline;
+    color: blue;
+  }
+
+  .view-less-btn {
+    display: none;
+  }
+
+  .box.expanded .view-less-btn {
+    display: inline-block;
+    text-decoration: underline;
+    color: blue;
+  }
+
+  .skills {
+    display: none;
+  }
+
+  .box.expanded .skills {
+    display: block;
+  }
+
+  .hobbi {
+    display: none;
+  }
+
+  .box.expanded .hobbi {
+    display: block;
+  }
+
+  .content-in-boxes {
+    display: none;
+  }
+
+  .box.expanded .content-in-boxes {
+    display: block;
+  }
+
+  .background1,
+  .background2 {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: stretch;
+    grid-template-columns: auto auto;
+    margin: 30px;
+  }
+
+  .box {
+    width: 300px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+
+  .lead {
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .non-icon-title {
+    display: flex;
+    font-size: 24px;
+    width: 70%;
+    vertical-align: middle;
+    padding-left: 10px;
+  }
+
+  .content-in-boxes {
+    padding-left: 10px;
+    flex: 1;
+    display: none;
+    margin-top: 10px;
+  }
+
+  .content-in-boxes .entry-title {
+    padding-left: 20px;
+    position: relative;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  .content-in-boxes .entry-time {
+    padding-left: 20px;
+    margin: 5px 0 8px;
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+  }
+
+  .content-in-boxes .current {
+    background: #007bff;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-style: italic;
+    font-size: 12px;
+  }
+
+  .content-in-boxes ul {
+    margin: 0;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .content-in-boxes ul li {
+    list-style-type: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .content-in-boxes .entry-title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: #007bff;
+    border-radius: 50%;
+  }
+
+  .hobbi {
+    justify-content: left;
+    gap: 20px;
+    margin-top: 20px;
+    display: none;
+  }
+
+  .hobbi-item {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+    font-size: 12px;
+    margin-left: 20px;
+  }
+
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #00aaff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .icon-circle i {
+    font-size: 20px;
+    color: #00aaff;
+  }
+
+  .icon-circle::before {
+    content: none !important;
+  }
+
+  .skills p {
+    margin: 8px 0 4px;
+    font-weight: 500;
+  }
+
+  .level {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .level span {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: #eee;
+    border-radius: 2px;
+    margin-bottom: 15px;
+  }
+
+  .level span.active {
+    background-color: #2196f3;
+  }
+
+  .skills {
+    display: none;
+  }
+
+  /* #endregion */
+
+  /* #region certificates */
+  #certificates-title {
+    padding-left: 20px;
+    font-size: 30px;
+    color: black;
+  }
+
+  #cert1 {
+    border-right: 1px solid #d6c08d;
+  }
+
+  .container {
+    background-color: #f3f3f3;
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+  .certificates {
+    max-width: 1060px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .row1,
+  .row2 {
+    display: flex;
+    gap: 20px;
+  }
+
+  .row2 {
+    width: 50%;
+  }
+
+  .row1 {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #d6c08d;
+    margin-bottom: 20px;
+  }
+
+  .cert {
+    flex: 1;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding-right: 20px;
+    color: black;
+  }
+
+  .cert img {
+    max-width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+  }
+
+  .cert-info {
+    font-size: 12px;
+  }
+
+  .cert-title {
+    color: black;
+    margin-bottom: 8px;
+    padding-left: 20px;
+  }
+
+  .cert-info ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+
+  .cert-info ul li {
+    margin-bottom: 5px;
+    opacity: 0.7;
+  }
+
+  /* #endregion */
+
+  /* #region projects */
+  .projects {
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  .project-title {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 0;
+    padding-left: 20px;
+  }
+
+  .boxes {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .box1 {
+    width: 240px;
+    background: white;
+    border: 1px solid #ddd;
+  }
+
+  .box1 img {
+    max-width: 240px;
+    height: auto;
+  }
+
+  .cv-table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    opacity: 0.7;
+    font-size: 12px;
+  }
+
+  .cv-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    vertical-align: top;
+  }
+
+  .cv-header td {
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .year {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .year-box {
+    background-color: #00aeef;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .label {
+    width: 100px;
+  }
+
+  .table-title {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* #endregion */
+
+  /* #region footer */
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    height: 100px;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; /* tạo khoảng cách giữa icon và chữ */
+  }
+
+  .contact1 i {
+    font-size: 22px;
+    color: #199cdb;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact1 a {
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+    opacity: 0.7;
+    font-size: 14px;
+  }
+
+  /* #endregion */
+}
