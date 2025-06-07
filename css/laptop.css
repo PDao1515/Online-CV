@@ -37,6 +37,11 @@
     font-size: 12px;
   }
 
+  #projict {
+    border-right: 1px solid #ddd;
+  }
+
+
   .navbar {
     display: flex;
     align-items: stretch;
