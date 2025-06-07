@@ -40,6 +40,11 @@
     height: 60px;
   }
 
+  #projict {
+    border-right: 1px solid #ddd;
+  }
+
+
   .nav-item {
     border-left: 1px solid #ddd;
     width: 100px;
