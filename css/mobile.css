@@ -39,8 +39,7 @@
   }
 
   .nav-item {
-    border-left: 1px solid #ddd;
-    width: 100px;
+    width: 120px;
     padding: 10px;
     justify-content: center;
     align-items: center;
@@ -306,11 +305,16 @@
     color: black;
     padding-left: 20px;
   }
+  .cert-section {
+    background-color: #f3f3f3;
+    margin-bottom: 20px;
+  }
 
   .container {
     background-color: #f3f3f3;
     padding-bottom: 50px;
     padding-top: 30px;
+    margin-bottom: 10px;
   }
   .certificates {
     margin: 0 auto;
