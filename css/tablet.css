@@ -44,10 +44,9 @@
     border-right: 1px solid #ddd;
   }
 
-
   .nav-item {
     border-left: 1px solid #ddd;
-    width: 100px;
+    width: 120px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -317,11 +316,18 @@
     border-right: 1px solid #d6c08d;
   }
 
+  .cert-section {
+    background-color: #f3f3f3;
+    margin-bottom: 20px;
+  }
+
   .container {
     background-color: #f3f3f3;
     padding-bottom: 50px;
     padding-top: 30px;
+    margin: 0px;
   }
+
   .certificates {
     max-width: 1060px;
     margin: 0 auto;
@@ -359,6 +365,7 @@
     max-width: 200px;
     height: auto;
     border: 1px solid #ccc;
+    margin-bottom: 10px;
   }
 
   .cert-info {
